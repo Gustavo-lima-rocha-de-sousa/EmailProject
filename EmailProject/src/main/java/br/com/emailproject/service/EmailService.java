@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+import javax.ejb.Stateful;
 import javax.ejb.Stateless;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -88,6 +89,5 @@ public class EmailService extends Thread {
 				LogUtil.getLogger(EmailService.class).error("Erro ao enviar e-mail" + e.getMessage());
 			}
 		}
-
 	}
 }
